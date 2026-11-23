@@ -135,6 +135,216 @@ body {
   line-height: 1.6;
 }
 
+/* =========================================================
+   Google Login Prompt Card & User Profile Bar
+   ========================================================= */
+.login-prompt-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  border: 2px solid #FED7AA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.login-prompt-icon {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+.login-prompt-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1E293B;
+}
+
+.login-prompt-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.google-login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #FFFFFF;
+  color: #374151;
+  border: 2px solid #E5E7EB;
+  border-radius: var(--radius-full);
+  padding: 16px 32px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.google-login-btn:hover:not(:disabled) {
+  background: #F9FAFB;
+  border-color: #D1D5DB;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.google-login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-user-section {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+/* User Profile & Logout Bar */
+.user-profile-bar {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-full);
+  padding: 10px 24px 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: var(--shadow-soft);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar-img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid #CBD5E1;
+}
+
+.user-avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: #EFF6FF;
+  color: #3B82F6;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid #BFDBFE;
+}
+
+.user-info-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.user-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1E293B;
+}
+
+.role-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.role-badge.teacher {
+  background: #EDE9FE;
+  color: #6D28D9;
+}
+
+.role-badge.student {
+  background: #FFEDD5;
+  color: #C2410C;
+}
+
+.user-email {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.profile-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uid-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uid-copy-btn:hover {
+  background: #F1F5F9;
+  border-color: #CBD5E1;
+}
+
+.home-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #DC2626;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.home-logout-btn:hover {
+  background: #FEE2E2;
+}
+
+/* Single card layout when non-teacher */
+.portal-cards.single-card {
+  max-width: 440px;
+}
+
 /* Portal Cards */
 .portal-cards {
   display: grid;
